@@ -1,0 +1,87 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: './versionsPlugin.gradle'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+
+    ext {
+        // architecture components
+        archCompomentVersion = '2.0.0'
+        lifecycleVersion = '2.2.0'
+        roomVersion = '2.2.6'
+
+        // binding
+        bindablesVersion = '1.0.5'
+
+        // koin
+        koinVersion = '2.0.1'
+
+        // coroutines
+        coroutinesVersion = '1.4.1'
+
+        // network
+        retrofitVersion = '2.9.0'
+        okhttpVersion = '4.9.0'
+        sandwichVersion = '1.0.9'
+        gsonVersion = '2.8.5'
+
+        // bundler
+        bundlerVersion = '1.0.3'
+
+        // glide
+        glideVersion = '4.12.0'
+        glidePaletteVersion = '2.1.2'
+
+        // whatIf
+        whatIfVersion = '1.0.9'
+
+        // adapter
+        baseAdapterVersion = '1.0.4'
+
+        // debugging
+        timberVersion = '4.7.1'
+        stethoVersion = '1.5.1'
+
+        // custom view
+        expandableTextViewVersion = '0.1.4'
+
+        // unit test
+        junitVersion = '4.12'
+        androidxTest = '1.1.1'
+        unitTestCoreVersion = '1.2.0'
+        robolectricVersion = '4.3'
+        androidxTestRules = '1.2.0-alpha04'
+        mockWebServerVersion = '3.9.0'
+        mockitoKotlinVersion = '2.1.0'
+        espressoVersion = '3.2.0'
+        jacocoVersion = '0.8.4'
+
+        // plugins
+        spotlessVersion = '5.8.2'
+        versionPlugin  = '0.23.0'
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.2.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.20"
+        classpath "com.diffplug.spotless:spotless-plugin-gradle:$spotlessVersion"
+        classpath "com.github.ben-manes:gradle-versions-plugin:$versionPlugin"
+        classpath "org.jacoco:org.jacoco.core:$jacocoVersion"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
