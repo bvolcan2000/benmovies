@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TMDB</string>
+    <string name="menu_movies">Películas</string>
+    <string name="menu_series">Series</string>
+    <string name="menu_pop_movies">Populares</string>
+    <string name="menu_top_movies">Top Rated</string>
+    <string name="menu_pop_series">Populares</string>
+    <string name="menu_top_series">Top Rated</string>
+    <string name="resumen">Resumen</string>
+    <string name="comentarios">Comentarios</string>
+    <string name="buscar">Buscar</string>
+    <string name="resultados">Resultados de la búsqueda</string>
+    <string name="trailers">Trailers</string>
+</resources>
