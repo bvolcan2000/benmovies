@@ -10,7 +10,6 @@ import com.google.android.material.chip.ChipGroup
 import com.skydoves.baserecyclerviewadapter.BaseAdapter
 import com.skydoves.baserecyclerviewadapter.RecyclerViewPaginator
 import com.movies.benmovies.R
-import com.movies.benmovies.extension.setQuery
 import com.movies.benmovies.extension.visible
 import com.movies.benmovies.models.Keyword
 import com.movies.benmovies.models.Review
@@ -195,21 +194,4 @@ object RecyclerViewBinding {
       }
     }
   }
-
-  @JvmStatic
-  @BindingAdapter("queryTv")
-  fun queryTv(view: RecyclerView, text: LiveData<String>) {
-    text.value.whatIfNotNull {
-      text.value?.let { it1 -> view.setQuery(it1) }
-    }
-  }
-
-  @JvmStatic
-  @BindingAdapter("queryMovie")
-  fun queryMovie(view: RecyclerView, text: LiveData<String>) {
-    text.value.whatIfNotNull {
-      text.value?.let { it1 -> view.setQuery(it1) }
-    }
-  }
-
 }

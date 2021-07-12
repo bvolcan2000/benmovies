@@ -14,14 +14,11 @@ import com.github.florent37.glidepalette.BitmapPalette
 import com.github.florent37.glidepalette.GlidePalette
 import com.movies.benmovies.api.Api
 import com.movies.benmovies.extension.requestGlideListener
-import com.movies.benmovies.extension.setQuery
 import com.movies.benmovies.extension.visible
 import com.movies.benmovies.models.entity.Movie
 import com.movies.benmovies.models.entity.TrendingMovie
 import com.movies.benmovies.models.entity.TrendingTv
 import com.movies.benmovies.models.entity.Tv
-import com.movies.benmovies.view.adapter.MovieListAdapter
-import com.movies.benmovies.view.adapter.TvListAdapter
 import com.skydoves.whatif.whatIfNotNull
 import com.skydoves.whatif.whatIfNotNullOrEmpty
 
